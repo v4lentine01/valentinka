@@ -1,0 +1,59 @@
+@keyframes heartAnimation {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(50px, 0);
+    }
+    50% {
+      transform: translate(0, 50px);
+    }
+    75% {
+      transform: translate(-50px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fffc9c;
+    font-family: Arial, sans-serif;
+}
+
+.heart__container {
+    position: absolute;
+    animation: heartAnimation 5s infinite alternate;
+
+}
+
+.heart__image {
+    width: 200px;
+    height: 200px;
+    background-image: url('./images/heart.png');
+    background-size: cover;
+}
+
+.heart__text {
+    color: #333333;
+}
+
+/* @media screen and (min-width: 320px) and (max-width: 767px) {
+    .heart__image {
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .heart__text {
+        font-size: 18px;
+        bottom: 10px;
+    }
+} */
